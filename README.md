@@ -4,9 +4,9 @@
 La semaine dernière, vous avez développé une API Laravel pour une plateforme de covoiturage🚗💨. Cette semaine, vous allez vous concentrer sur l'intégration du front-end de cette application en utilisant Angular🌐.
 
 ### Objectifs
-1.Créer une interface utilisateur intuitive et réactive avec Angular ⚡.
-2.Consommer l'API Laravel que vous avez développée la semaine dernière 🔄.
-3.Permettre aux utilisateurs de s'inscrire, se connecter, créer des annonces de covoiturage, rechercher des trajets et réserver des trajets 📅.
+1. Créer une interface utilisateur intuitive et réactive avec Angular ⚡.
+2. Consommer l'API Laravel que vous avez développée la semaine dernière 🔄.
+3. Permettre aux utilisateurs de s'inscrire, se connecter, créer des annonces de covoiturage, rechercher des trajets et réserver des trajets 📅.
 
 
 ### Étapes
