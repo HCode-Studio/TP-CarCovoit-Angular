@@ -1,20 +1,21 @@
-# Intégration Front-End Angular CarCovoit' 
+# 🌟 Intégration Front-End Angular CarCovoit' 
 
 ### Contexte
-La semaine dernière, vous avez développé une API Laravel pour une plateforme de covoiturage. Cette semaine, vous allez vous concentrer sur l'intégration du front-end de cette application en utilisant Angular.
+La semaine dernière, vous avez développé une API Laravel pour une plateforme de covoiturage🚗💨. Cette semaine, vous allez vous concentrer sur l'intégration du front-end de cette application en utilisant Angular🌐.
 
 ### Objectifs
-1. Créer une interface utilisateur intuitive et réactive avec Angular.
-2. Consommer l'API Laravel que vous avez développée la semaine dernière.
-3. Permettre aux utilisateurs de s'inscrire, se connecter, créer des annonces de covoiturage, rechercher des trajets et réserver des trajets.
+1.Créer une interface utilisateur intuitive et réactive avec Angular ⚡.
+2.Consommer l'API Laravel que vous avez développée la semaine dernière 🔄.
+3.Permettre aux utilisateurs de s'inscrire, se connecter, créer des annonces de covoiturage, rechercher des trajets et réserver des trajets 📅.
+
 
 ### Étapes
 
 1. **Initialiser le Projet Angular**
-   - Créez un nouveau projet Angular.
-   - Configurez le routage et les modules nécessaires pour votre application.
+   - Créez un nouveau projet Angular 🛠️.
+   - Configurez le routage et les modules nécessaires pour votre application 🔧.
 
-2. **Interface d'Inscription et de Connexion**
+2. **Interface d'Inscription et de Connexion :lock: ** 
    - Créez des composants pour les formulaires d'inscription et de connexion.
    - Créez un model User avec une interface IUser qui nous permettra de typer nos objets avec TypeScript.
    - Utilisez [Reactive Forms](https://angular.dev/guide/forms/reactive-forms) pour les formulaires.
@@ -23,22 +24,22 @@ La semaine dernière, vous avez développé une API Laravel pour une plateforme 
       - Le service possèdera minimum 2 méthodes *login* et *register*
 
 3. **Création et Gestion des Annonces de Trajet**
-   - Créez un composant pour l’ajout d’une nouvelle annonce de covoiturage via `/api/trips`.
-   - Affichez la liste des annonces via `/api/trips`.
-   - Mettez en place la possibilité de supprimer et modifier une annonce via `/api/trips/{trip}`.
+   - Créez un composant pour l’ajout d’une nouvelle annonce de covoiturage 🚀 via `/api/trips`.
+   - Affichez la liste des annonces via `/api/trips` 📃.
+   - Mettez en place la possibilité de supprimer et modifier une annonce via `/api/trips/{trip}` 📝❌.
    - Intégrer les routes api avec un service `trip.service.ts`
 
 4. **Recherche de Trajets**
-   - Créez un composant de recherche.
-   - Affichez les résultats de la recherche sous forme de liste ou de cartes en utilisant les paramètres de `start`, `end`, et `date` dans la route GET de `/api/trips`.
+   - Créez un composant de recherche 🔍.
+   - Affichez les résultats de la recherche sous forme de liste ou de cartes en utilisant les paramètres de `start`, `end`, et `date` dans la route GET de `/api/trips` 🗂️.
 
 5. **Réservation et Gestion des Réservations**
-   - Créez un composant pour réserver un trajet via `/api/booking`.
-   - Gérez l'annulation des réservations via `/api/booking/{trip_id}`.
-   - Créer un service `booking.service.ts` pour gérer requêtes de réservations 
+   - Créez un composant pour réserver un trajet via `/api/booking` 🎫.
+   - Gérez l'annulation des réservations via `/api/booking/{trip_id}` 🚫.
+   - Créer un service `booking.service.ts` pour gérer requêtes de réservations. 
 
-6. Bonus : **Gestion de Profil** 
-   - Implémentez une page profil permettant que modifier ses informations utilisateurs.
+6. Bonus : **Gestion de Profil 👤** 
+   - Implémentez une page profil permettant que modifier ses informations utilisateurs 🔐.
    - Ajouter un historique de vos trajets sur la page
    - Gérer les informations utilisateur via `/api/users/{user}`.
 
@@ -49,7 +50,7 @@ La semaine dernière, vous avez développé une API Laravel pour une plateforme 
 
 ### UI et Charte Graphique
 
-Vous avez le choix d'utiliser la librairie UI que vous souhaitez
+Vous avez le choix d'utiliser la librairie UI que vous souhaitez 🎨
 - Librairie conseillé : 
    - TailwindCSS (que vous avez l'habitude d'utiliser)
    - Angular Material
