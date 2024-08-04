@@ -47,8 +47,16 @@ La semaine dernière, vous avez développé une API Laravel pour une plateforme 
 - **API:** Laravel [ici](https://github.com/G404-DWWM/correction-car-covoit-api)
 
 
-### Charte Graphique
+### UI et Charte Graphique
+
+Vous avez le choix d'utiliser la librairie UI que vous souhaitez
+- Librairie conseillé : 
+   - TailwindCSS (que vous avez l'habitude d'utiliser)
+   - Angular Material
+   - Ng-Bootstrap
+
 - Palette de couleurs : [Coolors.co](https://coolors.co/000000-0d9488-abc2bf-f8b25b-fff3a6-fefce8-ffffff)
+- Typo : Robot / Merryveather Sans
 
 Exemple d'intégration des couleurs :
 - **Couleurs principales :** 
@@ -64,3 +72,5 @@ Exemple d'intégration des couleurs :
 
 Exemple d'intégration avec ces couleurs :
 ![Homepage example](https://github.com/user-attachments/assets/a48e10b3-ccfc-4c93-96de-1cc033f16795)
+
+#### Vous êtes également libre de créer la charte graphique et le design que vous souhaitez. Soyez créatif ! :paintbrush: :star2:
