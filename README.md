@@ -1,6 +1,4 @@
-# TP-CarCovoit-Angular
-
-## Intégration Front-End Angular
+# Intégration Front-End Angular CarCovoit' 
 
 ### Contexte
 La semaine dernière, vous avez développé une API Laravel pour une plateforme de covoiturage. Cette semaine, vous allez vous concentrer sur l'intégration du front-end de cette application en utilisant Angular.
@@ -10,9 +8,6 @@ La semaine dernière, vous avez développé une API Laravel pour une plateforme 
 2. Consommer l'API Laravel que vous avez développée la semaine dernière.
 3. Permettre aux utilisateurs de s'inscrire, se connecter, créer des annonces de covoiturage, rechercher des trajets et réserver des trajets.
 
-### Livrables
-Au terme de ce TP, vous devrez fournir un projet Angular fonctionnel permettant d’interagir avec l’API Laravel.
-
 ### Étapes
 
 1. **Initialiser le Projet Angular**
@@ -21,13 +16,17 @@ Au terme de ce TP, vous devrez fournir un projet Angular fonctionnel permettant 
 
 2. **Interface d'Inscription et de Connexion**
    - Créez des composants pour les formulaires d'inscription et de connexion.
-   - Utilisez Reactive Forms pour les formulaires.
-   - Connectez-vous à l'API pour gérer les utilisateurs via `/api/register` et `/api/login`.
+   - Créez un model User avec une interface IUser qui nous permettra de typer nos objets avec TypeScript.
+   - Utilisez [Reactive Forms](https://angular.dev/guide/forms/reactive-forms) pour les formulaires.
+   - Connectez-vous à l'API pour gérer les utilisateurs via `/api/register` et `/api/login`. en utilisant un service `auth.service.ts`
+      - Tips: on enregistre le token JWT ainsi que les informations (non sensible) de l'utilisateur connecté dans le LocalStorage du navigateur
+      - Le service possèdera minimum 2 méthodes *login* et *register*
 
-3. **Création et Gestion des Annonces**
+3. **Création et Gestion des Annonces de Trajet**
    - Créez un composant pour l’ajout d’une nouvelle annonce de covoiturage via `/api/trips`.
    - Affichez la liste des annonces via `/api/trips`.
    - Mettez en place la possibilité de supprimer et modifier une annonce via `/api/trips/{trip}`.
+   - Intégrer les routes api avec un service `trip.service.ts`
 
 4. **Recherche de Trajets**
    - Créez un composant de recherche.
@@ -36,57 +35,19 @@ Au terme de ce TP, vous devrez fournir un projet Angular fonctionnel permettant 
 5. **Réservation et Gestion des Réservations**
    - Créez un composant pour réserver un trajet via `/api/booking`.
    - Gérez l'annulation des réservations via `/api/booking/{trip_id}`.
+   - Créer un service `booking.service.ts` pour gérer requêtes de réservations 
 
-6. **Gestion des Utilisateurs**
-   - Implémentez un système de rôle pour les utilisateurs (admin, utilisateur standard).
+6. Bonus : **Gestion de Profil** 
+   - Implémentez une page profil permettant que modifier ses informations utilisateurs.
+   - Ajouter un historique de vos trajets sur la page
    - Gérer les informations utilisateur via `/api/users/{user}`.
 
-7. **Améliorations UI/UX**
-   - Ajoutez des validations aux formulaires.
-   - Mettez en place des notifications pour les actions réussies ou les erreurs.
-
-#### Technologies Utilisées
+### Technologies Utilisées
 - **Framework Front-End:** Angular
-- **API:** Laravel (développée la semaine dernière)
+- **API:** Laravel [ici](https://github.com/G404-DWWM/correction-car-covoit-api)
 
-#### Exemples de Routes API
 
-- **Authentification:** 
-  - `POST /api/register` - Inscription d’un utilisateur
-  - `POST /api/login` - Connexion d’un utilisateur
-  - `POST /api/logout` - Déconnexion d’un utilisateur
-
-- **Annonces:**
-  - `GET /api/trips` - Récupération de la liste des annonces de covoiturage
-  - `POST /api/trips` - Création d’une annonce de covoiturage
-  - `GET /api/trips/{trip}` - Récupération des détails d'un trajet
-  - `PUT /api/trips/{trip}` - Mise à jour d’une annonce de covoiturage
-  - `DELETE /api/trips/{trip}` - Suppression d’une annonce de covoiturage
-
-- **Réservations:**
-  - `POST /api/booking` - Réservation d’un trajet
-  - `DELETE /api/booking/{trip_id}` - Annulation d'une réservation 
-
-- **Utilisateurs:**
-  - `GET /api/users/{user}` - Récupération des détails d'un utilisateur
-  - `PUT /api/users/{user}` - Mise à jour des informations d'un utilisateur
-  - `DELETE /api/users/{user}` - Suppression d'un utilisateur
-
-#### Critères d'Évaluation
-- Structure du projet Angular.
-- Intégration correcte avec l'API Laravel.
-- Fonctionnalité et réactivité de l'application.
-- Qualité de l'interface utilisateur.
-- Respect des bonnes pratiques en matière de développement Angular.
-
-#### Prérequis
-- Avoir l’API Laravel fonctionnelle localement ou sur un serveur.
-- Connaissances de base en Angular.
-
-ard).
-   - Gérer les informations utilisateur via `/api/users/{user}`.
-
-#### Charte Graphique
+### Charte Graphique
 - Palette de couleurs : [Coolors.co](https://coolors.co/000000-0d9488-abc2bf-f8b25b-fff3a6-fefce8-ffffff)
 
 Exemple d'intégration des couleurs :
